@@ -18,3 +18,12 @@ The Configuration class stores the settings for:
 
 It also has a dataset class that simplifies training based on the data generated from projects based in the Tygron Platform.
 
+# Installation
+## Python
+[https://www.python.org/downloads/](Download) and Install Python 3.9 or higher.
+
+## Pytorch
+Please refer to the [https://pytorch.org/get-started/locally/](official instructions) to install the stable versions of torch and torchvision on your system.
+If possible, install it through conda or pip3 with Cuda 12.1
+
+## ONNX
