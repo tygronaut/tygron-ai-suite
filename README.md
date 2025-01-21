@@ -28,3 +28,6 @@ If possible, install it through conda or pip3 with Cuda 12.1
 
 ## ONNX
 Install the ONNX libraries using pip or conda:
+```
+pip install onnx onnxscript onnxruntime
+```
