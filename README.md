@@ -23,7 +23,7 @@ It also has a dataset class that simplifies training based on the data generated
 [Download](https://www.python.org/downloads/) and Install Python 3.11 or higher.
 
 ## Anaconda
-[Download](https://www.anaconda.com/download/) anaconda and install it to access conda and the anaconda-navigator.
+[Download](https://www.anaconda.com/download/) Anaconda and install it to access conda and the anaconda-navigator.
 
 ## Conda
 
