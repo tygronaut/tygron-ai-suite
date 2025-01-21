@@ -20,14 +20,45 @@ It also has a dataset class that simplifies training based on the data generated
 
 # Installation
 ## Python
-[Download](https://www.python.org/downloads/) and Install Python 3.9 or higher.
+[Download](https://www.python.org/downloads/) and Install Python 3.11 or higher.
 
-## Pytorch
-Please refer to the [officual instructions](https://pytorch.org/get-started/locally/) to install the stable versions of torch and torchvision on your system.
-If possible, install it through conda or pip3 with Cuda 12.1
+## Anaconda
+[Download](https://www.anaconda.com/download/) anaconda and install it to access conda and the anaconda-navigator.
 
-## ONNX
-Install the ONNX libraries using pip or conda:
+## Conda
+
+Once both are installed, create a new conda environment, for example '''tygronai'''.
+
+### Create conda enviroment
 ```
-pip install onnx onnxscript onnxruntime
+conda create --name tygronai python=3.11
 ```
+Once create, activate itActivate it
+```
+conda activate tygronai
+````
+### Install pytorch and torchvision with cuda:
+```
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+```
+For alternative versions of pytorch, such as the cpu only version, please refer to the [official instructions](https://pytorch.org/get-started/locally/)
+
+### Install onnx and onnxruntime
+```
+conda install onnx onnxruntime
+```
+### Install onnxscript
+```
+pip install onnxscript
+```
+### Install anaconda-navigator
+conda install anaconda-navigator
+
+To activate the environment and start anaconda-navigator using a simple shell script file, create one, for example named '''anaconda.sh''', with the following commands:
+```
+conda init 
+conda activate tygronai
+anaconda-navigator
+```
+Call the shell script using ```bash -i anaconda.sh```
+
