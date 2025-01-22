@@ -19,15 +19,17 @@ The Configuration class stores the settings for:
 It also has a dataset class that simplifies training based on the data generated from projects based in the Tygron Platform.
 
 # Installation
-## Python
-[Download](https://www.python.org/downloads/) and Install Python 3.11 or higher.
+The easiest way to get started is downloading and using anaconda. A conda enviroment yml-file is provided in this repository to automatically setup a conda environment that contains all packages used in the provided jupyter notebook.
 
 ## Anaconda
 [Download](https://www.anaconda.com/download/) Anaconda and install it to access conda and the anaconda-navigator.
 
-## Conda
+## Import and setup environment automatically
+Once installed, open the Anaconda Navigator app. Once open, make sure the application is updated to the latest version. 
+Next, select the environments tab and in the bar below, select the option import an environment from a local file. Select the tygronai.yml file provided by this repository.
 
-Once both are installed, create a new conda environment, for example '''tygronai'''.
+## Manual setup of a conda environment
+In case you want to manually setup the conda enviroment, follow the instructions below.
 
 ### Create conda enviroment
 ```
@@ -38,12 +40,14 @@ Once create, activate itActivate it
 conda activate tygronai
 ````
 ### Install pytorch and torchvision with cuda:
+In case you have a GPU that supports at least CUDA 12.1, you can run the conda install instructino below.
 ```
 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 ```
 For alternative versions of pytorch, such as the cpu only version, please refer to the [official instructions](https://pytorch.org/get-started/locally/)
 
 ### Install onnx and onnxruntime
+To import a trained neural network into the Tygron Platform, it needs to be exported from [PyTorch to ONNX](https://pytorch.org/docs/stable/onnx.html). The following packages need to be installed.
 ```
 conda install onnx onnxruntime
 ```
@@ -51,9 +55,8 @@ conda install onnx onnxruntime
 ```
 pip install onnxscript
 ```
-### Install anaconda-navigator
-conda install anaconda-navigator
 
+# Ubuntu shell script for starting anaconda-navigator
 To activate the environment and start anaconda-navigator using a simple shell script file, create one, for example named '''anaconda.sh''', with the following commands:
 ```
 conda init 
