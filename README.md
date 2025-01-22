@@ -26,7 +26,9 @@ The easiest way to get started is downloading and using anaconda. A conda enviro
 
 ## Import and setup environment automatically
 Once installed, open the Anaconda Navigator app. Once open, make sure the application is updated to the latest version. 
-Next, select the environments tab and in the bar below, select the option import an environment from a local file. Select the tygronai.yml file provided by this repository.
+Next, select the environments tab and in the bar below, select the option import an environment from a local file. Select the tygronai.yml file provided by this repository. Please note that importing this environment may take a while.
+
+When the import is completed, you can optionally select this environment as your default. In the upper left corner of the Anaconda-navigator app, select File > Preferences. For the option "Default conda environment" select tygronai.
 
 ## Manual setup of a conda environment
 In case you want to manually setup the conda enviroment, follow the instructions below.
@@ -60,7 +62,6 @@ pip install onnxscript
 To activate the environment and start anaconda-navigator using a simple shell script file, create one, for example named '''anaconda.sh''', with the following commands:
 ```
 conda init 
-conda activate tygronai
 anaconda-navigator
 ```
 Call the shell script using ```bash -i anaconda.sh```
