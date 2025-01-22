@@ -66,3 +66,14 @@ anaconda-navigator
 ```
 Call the shell script using ```bash -i anaconda.sh```
 
+# Getting Started
+
+* Export AI Datasets from Tygron Platform projects. Make sure you have a separated the folders containing train datasets and test datasets.
+* Start Anaconda Navigator.
+* Open the Jupyter Lab app (if necessary, install it first).
+* Go to local directory of this repository.
+* Open the example notebook named example_config.ipynb.
+* Adjust the following path variables:
+** trainDirectory = "<PATH TO TRAIN FILES>"
+** testDirectory = "<PATH TO TEST FILES>"
+* Press the "Restart kernal and execute all cells" button.
