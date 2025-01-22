@@ -74,6 +74,6 @@ Call the shell script using ```bash -i anaconda.sh```
 * Go to local directory of this repository.
 * Open the example notebook named example_config.ipynb.
 * Adjust the following path variables:
- * trainDirectory = "<PATH TO TRAIN FILES>"
- * testDirectory = "<PATH TO TEST FILES>"
+  * trainDirectory = "PATH TO TRAIN FILES"
+  * testDirectory = "PATH TO TEST FILES"
 * Press the "Restart kernal and execute all cells" button.
